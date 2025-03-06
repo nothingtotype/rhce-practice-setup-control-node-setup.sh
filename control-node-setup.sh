@@ -10,7 +10,7 @@ echo "Installing Python and pip..."
 sudo dnf install -y python3 python3-pip
 
 echo "Installing Ansible..."
-sudo dnf install -y ansible
+python3 -m pip install ansible
 
 echo "Creating ansible user..."
 if id "ansible" &>/dev/null; then
